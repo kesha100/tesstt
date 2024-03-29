@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ayanaprosit_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/ayanaprosit_backend/main.mo",
+      "type": "motoko"
+    },
+    "ayanaprosit_frontend": {
+      "dependencies": [
+        "ayanaprosit_backend"
+      ],
+      "source": [
+        "src/ayanaprosit_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ayanaprosit_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
